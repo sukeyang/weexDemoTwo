@@ -13,13 +13,14 @@
 @implementation WeexManager
 
 + (void)setUp {
+    [self startDebugModel];
     //business configuration
     [WXAppConfiguration setAppGroup:@"julong"];
     [WXAppConfiguration setAppName:@"WeexDemo"];
     [WXAppConfiguration setAppVersion:@"1.0.0"];
     
     //init sdk enviroment
-    [WXSDKEngine initSDKEnviroment];
+    [WXSDKEngine initSDKEnvironment];
     
     //register custom module and component，optional
 //    [WXSDKEngine registerComponent:@"MyView" withClass:[MyViewComponent class]];
@@ -30,6 +31,12 @@
 //    
 //    //set the log level
     [WXLog setLogLevel:WXLogLevelAll];
+    
+}
+
++ (void)startDebugModel {
+    [WXDevTool setDebug:YES];
+    [WXDevTool launchDevToolDebugWithUrl:@"ws://172.16.150.123:8088/debugProxy/native"];
 }
 
 @end

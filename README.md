@@ -15,6 +15,7 @@ Install the dependencies:
 
 ```
 npm install
+npm install -g weex-toolkit@beta
 ```
 
 Compile the source code:

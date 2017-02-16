@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <WeexSDK/WeexSDK.h>
+#import <TBWXDevtool/WXDevtool.h>
 
 
 @interface WeexManager : NSObject
 
 + (void)setUp;
+
 
 @end
