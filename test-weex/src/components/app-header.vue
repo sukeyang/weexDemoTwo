@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="logo" @click="jump('/')">
-      <image class="image" src="http://localhost:3000/images/back.png"></image>
+      <image class="image" src="http://olgl52s84.bkt.clouddn.com/back.png"></image>
     </div>
     <text class="text">{{target}}</text>
   </div>

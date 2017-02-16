@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%;">
+  <div class="cnt">
     <list class="list">
       <cell class="cell" v-for="num in listData">
         <div class="panel" @click="jump(`${num.url}`)">

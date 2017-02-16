@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%;">
+  <div class="cnt">
     <text>change network</text>
   </div>
 </template>
