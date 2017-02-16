@@ -6,7 +6,7 @@
 
 * 根目录下包含两个工程，一个是weex工程，一个是express工程（为weex提供一些支持）
 * 工程的初始化需要到各自的工程的根目录下去操作，里面都会有相关的readme。
-* ios工程目录存放位置,[下载地址](git@192.168.50.20:yangshuo/weexDemo-iOS.git)
+* ios工程目录存放位置,已经配置好文件.
 	
 		test-weex/ios
 ## Compile
