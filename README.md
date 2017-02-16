@@ -50,11 +50,6 @@ Assuming you have configured the Android development environment properly, just 
 
 First you should [setup the iOS develop environment](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/Setup/Setup.html) and install the [CocoaPods](https://guides.cocoapods.org/using/getting-started.html).
 
-Enter the `ios` path, use CocoaPods to install dependencies:
-
-```
-pod install
-```
 
 Open the project in the `ios` folder by Xcode, you could run the app on the simulator.
 
