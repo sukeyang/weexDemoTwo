@@ -3,5 +3,3 @@
     <text>change network</text>
   </div>
 </template>
-<script>
-</script>

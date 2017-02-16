@@ -7,7 +7,6 @@
 <style>
 .wrapper {
   align-items: center;
-  flex: 1 1 0%;
   height: 100%;
 }
 
