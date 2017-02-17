@@ -24,35 +24,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>WeexSDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0FEE0E3F28E3F0BF5BF97938EEC62BDC</key>
+		<key>79C1E777827C4ACC006B9BAFB326A81D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19F7CE01CF55F8B221E9430DA8764406</key>
+		<key>802A06F649ECBE3E7D4EC911AD08B1F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>661F2B5960456C94026C386BAA283403</key>
+		<key>C9411B34A7B85A6FAABEF8C9DEDA7779</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>877BFD63ABE26E522AD74A8B29825B1C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C73CB964774AE110CE46D07D37CA2E53</key>
+		<key>D0EF2EAA7186DB88A49C8FE4F56687A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

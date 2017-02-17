@@ -32,6 +32,9 @@
 //    [self.view addSubview:testButton];
 //    [testButton setTitle:@"原生的button" forState:UIControlStateNormal];
 //    [testButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(render) name:@"RefreshInstance" object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:notificationRefreshInstance: name:@"RefreshInstance" object:nil];
+
     [self render];
 }
 

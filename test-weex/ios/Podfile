@@ -6,9 +6,9 @@ platform :ios, '7.0'
 
 target :weexDemo do
 
- pod 'WeexSDK', :path=>'./WeexSDK/'
+ pod 'WeexSDK', '~>0.9.5'
  pod 'SSCategoriesSDK','~> 0.3.8' #通用扩展
- pod  'WXDevtool',   '~>0.9.5'
+ pod 'WXDevtool',   '~>0.9.5'
  pod 'SDWebImage', '3.7.5'
  pod 'ATSDK-Weex', '~> 0.0.1'
  pod 'SocketRocket', '0.4.2' 
