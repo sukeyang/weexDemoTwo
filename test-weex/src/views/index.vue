@@ -1,5 +1,6 @@
 <template>
-  <div class="cnt">
+  <div append="tree">
+    <app-header></app-header>
     <list class="list">
       <cell class="cell" v-for="num in listData">
         <div class="panel" @click="jump(`${num.url}`)">
@@ -10,8 +11,11 @@
   </div>
 </template>
 <script>
+import AppHeader from '../components/app-header.vue'
 export default {
-
+  components: {
+    AppHeader
+  },
   data() {
     return {
 
@@ -51,30 +55,24 @@ export default {
           text: '模态框',
           name: 'modal',
           url: '/modal'
-        },
-        // {
-        //   text: '日期选择器',
-        //   name: 'picker',
-        //   url: '/picker'
-        // }
+        }, {
+          text: 'navigator',
+          name: 'navigator',
+          url: '/navigator'
+        }, {
+          text: '测试功能页面',
+          name: 'test',
+          url: '/test'
+        }
       ]
     }
   }
 }
 </script>
 <style scoped>
-.cnt {
-  width: 100%;
-  display: block;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
 .list li {
   font-size: 40px;
   display: inline-block;
-  width: 100%;
   height: 60px;
   text-align: center;
   margin-top: 20px;
@@ -82,15 +80,11 @@ export default {
 
 .list {
   display: inline-block;
-  width: 100%;
 }
 
 .panel {
-  width: 90%;
   height: 100px;
-  margin-left: 5%;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 30px;
   flex-direction: column;
   justify-content: center;
   border-width: 2px;

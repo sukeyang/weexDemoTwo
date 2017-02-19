@@ -1,1 +1,0 @@
-../../../SSCategoriesSDK/SSCategoriesSDK/Classes/SSUIKit/SSUIAdapter.h

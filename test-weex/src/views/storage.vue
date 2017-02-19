@@ -1,11 +1,14 @@
 <template>
   <div class="list">
+    <app-header></app-header>
     <div class="group center">
       <div class="panel">
         <text class="text">{{state}}</text>
       </div>
     </div>
-    <input ref="input" autofocus="true" class="input" type="text" v-model.lazy="msg">
+    <div>
+      <input value="" autofocus="true" class="input" type="text" v-model="msg">
+    </div>
     <div class="group">
       <div class="panel">
         <text class="text" @click="setItem">set</text>
@@ -25,47 +28,54 @@
 <script>
 const storage = weex.requireModule('storage')
 const modal = weex.requireModule('modal')
+import AppHeader from '../components/app-header.vue'
 export default {
-
+  components: {
+    AppHeader
+  },
   data() {
-      return {
-        msg: '',
-        keys: '[]',
-        length: 0,
-        state: '----'
-      }
-    },
-    methods: {
-      setItem() {
-        storage.setItem('name', this.$refs.input.value, event => {
-          this.state = 'set success'
-          console.log('set success')
-        })
-      },
-      getItem() {
-        storage.getItem('name', event => {
-          console.log('get value:', event.data)
-          this.state = 'value: ' + event.data
-        })
-      },
-      removeItem() {
-        storage.removeItem('name', event => {
-          console.log('delete value:', event.data)
-          this.state = 'deleted'
-        })
-      },
-      getAll() {
-        storage.getAllKeys(event => {
-          // modal.toast({ message: event.result })
-          if (event.result === 'success') {
-            modal.toast({
-              message: 'props: ' + event.data.join(', ')
-            })
-          }
-        })
-      }
-
+    return {
+      msg: '',
+      keys: '[]',
+      length: 0,
+      state: '----',
     }
+  },
+  methods: {
+    setItem() {
+
+      storage.setItem('name', this.msg, event => {
+        this.state = 'set success'
+        console.log('set success')
+      })
+    },
+    getItem() {
+      storage.getItem('name', event => {
+        console.log('get value:', event.data)
+        this.state = 'value: ' + event.data
+      })
+    },
+    removeItem() {
+      storage.removeItem('name', event => {
+        console.log('delete value:', event.data)
+        this.state = 'deleted'
+      })
+    },
+    getAll() {
+      storage.getAllKeys(event => {
+        // modal.toast({ message: event.result })
+        if (event.result === 'success') {
+          modal.toast({
+            message: 'props: ' + event.data.join(', ')
+          })
+        }
+      })
+    },
+    onchange(event) {
+      this.result = event.value
+    }
+
+  }
 }
 </script>
 <style scoped>

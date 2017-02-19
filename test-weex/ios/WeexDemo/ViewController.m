@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import <WeexSDK/WeexSDK.h>
 #import <EventKit/EventKit.h>
-#import <SSCategories.h>
 
 @interface ViewController ()<UIGestureRecognizerDelegate>
 @property (nonatomic, readwrite, strong) WXSDKInstance *instance;
