@@ -1,15 +1,19 @@
 <template>
   <div>
     <app-header></app-header>
+    <div class="testBtn">
+      <text onclick="click">点击我测试</text>
+    </div>
     <list class="list">
       <cell class="cell" v-for="item in items">
-        <button @click="goMethod">{{ item.content }}</button>
+        <button class="item" @click="goMethod">{{ item.content }}</button>
       </cell>
     </list>
   </div>
 </template>
 <script>
 import AppHeader from '../components/app-header.vue'
+
 export default {
   components: {
     AppHeader
@@ -40,6 +44,9 @@ export default {
   methods: {
     goMethod(event) {
       debugger
+    },
+    click() {
+      require('@weex-module/myModule').printLog("我是一个测试！")
     }
   }
 }
@@ -47,7 +54,6 @@ export default {
 <style scoped>
 .cell {
   height: 60px;
-  font-size: 50px;
   padding: 10px 20px;
   border-style: solid;
   border-width: 2px;
@@ -58,5 +64,15 @@ export default {
   height: 100px;
   box-sizing: content-box;
   border-right: 0;
+}
+
+.item {
+  font-size: 50px;
+}
+
+.testBtn {
+  font-size: 50px;
+  height: 80px;
+  background-color: red;
 }
 </style>
