@@ -8,7 +8,6 @@
 </template>
 <style scoped>
 .header {
-  width: 100%;
   position: relative;
   top: 0;
   left: 0;
@@ -40,6 +39,7 @@
   top: -20px;
   font-size: 50px;
   color: #fff;
+  text-align: center;
 }
 </style>
 <script>
