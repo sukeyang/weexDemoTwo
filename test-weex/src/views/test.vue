@@ -5,14 +5,15 @@
       <text onclick="click">点击我测试</text>
     </div>
     <list class="list">
-      <cell class="cell" v-for="item in items">
-        <button class="item" @click="goMethod">{{ item.content }}</button>
+      <cell class="cell" v-for="(item,index) in items">
+        <button :id="`btn-` + index" :data-method-name="item.methodName" class="item" @click="goMethod(index)">{{ item.content }}</button>
       </cell>
     </list>
   </div>
 </template>
 <script>
 import AppHeader from '../components/app-header.vue'
+var modal = weex.requireModule('modal')
 
 export default {
   components: {
@@ -30,9 +31,6 @@ export default {
         content: "获取session",
         methodName: "getSession"
       }, {
-        content: "显示session",
-        methodName: "showSession"
-      }, {
         content: "相册",
         methodName: "album"
       }, {
@@ -42,8 +40,14 @@ export default {
     }
   },
   methods: {
-    goMethod(event) {
-      debugger
+    goMethod(index) {
+      modal.alert({
+          message: '@weex-module/' + this.$data.items[index].methodName,
+          duration: 3,
+          okTitle: '确定'
+        })
+        // console.log(event.target.getAttribute("data-methodname"))
+      require('@weex-module/' + this.$data.items[index].methodName)
     },
     click() {
       require('@weex-module/myModule').printLog("我是一个测试！")
