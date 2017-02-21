@@ -1,13 +1,14 @@
 <template>
   <div class="cnt">
     <app-header></app-header>
-    <div class="inputs">
-      <div class="input" @click="focus">
-        <input class="input-item" type="text" placeholder="name" value="" autofocus="true" ref="name">
-      </div>
-      <div class="input" @click="focus">
-        <input class="input-item" type="text" placeholder="password" value="" ref="password">
-      </div>
+    <!-- <div class="inputs">
+  <div class="input" @click="focus">
+    <input class="input-item" type="text" placeholder="name" value="" autofocus="true" ref="name">
+  </div>
+  <div class="input" @click="focus">
+    <input class="input-item" type="text" placeholder="password" value="" ref="password">
+  </div>
+ -->
       <button class="button" @click="login">确认</button>
     </div>
   </div>

@@ -7,7 +7,7 @@
       </div>
     </div>
     <div>
-      <input value="" autofocus="true" class="input" type="text" v-model="msg">
+      <!-- <input value="" autofocus="true" class="input" type="text" v-model="msg"> -->
     </div>
     <div class="group">
       <div class="panel">
