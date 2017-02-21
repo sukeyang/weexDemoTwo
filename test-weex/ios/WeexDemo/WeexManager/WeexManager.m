@@ -31,7 +31,6 @@
 //    
 //    //set the log level
     [WXLog setLogLevel:WXLogLevelAll];
-    
 }
 
 + (void)startDebugModel {
