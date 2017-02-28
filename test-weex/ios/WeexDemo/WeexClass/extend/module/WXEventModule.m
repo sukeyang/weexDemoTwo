@@ -62,6 +62,12 @@ WX_EXPORT_METHOD(@selector(openURL:callback:))
 //    ((WXDemoViewController *)controller).url = [NSURL URLWithString:newURL];
 //    [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
     callback(@{@"result":@"success"});
+//    https://github.com/alibaba/weex/issues/1083
+//    https://github.com/alibaba/weex/issues/866
+//    https://github.com/alibaba/weex/issues/1337
+//    https://github.com/weexteam/article/issues/67
+//    https://github.com/alibaba/weex/issues/1356
+//    https://github.com/weexteam/article/issues/17
 }
 
 @end
