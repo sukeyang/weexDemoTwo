@@ -44,11 +44,11 @@
     });
      _instance = [[WXSDKInstance alloc] init];
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [_instance fireGlobalEvent:@"geolocation" params:@{@"key":@"value"}];
-
-    });
-   }
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [_instance fireGlobalEvent:@"geolocation" params:@{@"key":@"value"}];
+//
+//    });
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
