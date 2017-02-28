@@ -5405,6 +5405,8 @@
 	//
 	//
 
+	var eventModule = weex.requireModule('@weex-module/event');
+
 	exports.default = {
 	  components: {
 	    AppHeader: _appHeader2.default
@@ -5431,17 +5433,30 @@
 	  },
 
 	  methods: {
+
 	    goMethod: function goMethod(index) {
-	      modal.alert({
-	        message: '@weex-module/' + this.$data.items[index].methodName,
-	        duration: 3,
-	        okTitle: '确定'
+	      var message;
+	      message = '@weex-module/' + this.$data.items[index].methodName;
+	      eventModule.openURL(message, function (ret) {
+	        nativeLog(ret);
 	      });
-	      // console.log(event.target.getAttribute("data-methodname"))
-	      !(function webpackMissingModule() { var e = new Error("Cannot find module \"@weex-module\""); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 	    },
+
+	    // modal.alert({
+	    //     message: '@weex-module/' + this.$data.items[index].methodName,
+	    //     duration: 3,
+	    //     okTitle: '确定'
+	    //   })
+	    //     // console.log(event.target.getAttribute("data-methodname"))
+	    //   // require('@weex-module/' + this.$data.items[index].methodName)
+	    //    require('weex-components');
+
 	    click: function click() {
-	      __weex_require_module__('myModule').printLog("我是一个测试！");
+	      // __weex_require_module__('myModule').printLog("我是一个测试！")
+
+	      eventModule.openURL(message, function (ret) {
+	        nativeLog(ret);
+	      });
 	    }
 	  }
 	};

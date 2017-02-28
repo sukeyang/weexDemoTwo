@@ -14,6 +14,7 @@
 <script>
 import AppHeader from '../components/app-header.vue'
 var modal = weex.requireModule('modal')
+var eventModule = weex.requireModule('@weex-module/event'); 
 
 export default {
   components: {
@@ -40,17 +41,30 @@ export default {
     }
   },
   methods: {
-    goMethod(index) {
-      modal.alert({
-          message: '@weex-module/' + this.$data.items[index].methodName,
-          duration: 3,
-          okTitle: '确定'
-        })
-        // console.log(event.target.getAttribute("data-methodname"))
-      require('@weex-module/' + this.$data.items[index].methodName)
+   
+    goMethod:function (index) {
+       var  message ;
+       message = '@weex-module/' + this.$data.items[index].methodName;
+        eventModule.openURL(message,function(ret) {   
+        nativeLog(ret);
+      });
     },
+    
+      // modal.alert({
+      //     message: '@weex-module/' + this.$data.items[index].methodName,
+      //     duration: 3,
+      //     okTitle: '确定'
+      //   })
+    //     // console.log(event.target.getAttribute("data-methodname"))
+    //   // require('@weex-module/' + this.$data.items[index].methodName)
+    //    require('weex-components');
+ 
     click() {
-      require('@weex-module/myModule').printLog("我是一个测试！")
+      // require('@weex-module/myModule').printLog("我是一个测试！")
+
+      eventModule.openURL(message,function(ret) {   
+        nativeLog(ret);
+      });
     }
   }
 }
