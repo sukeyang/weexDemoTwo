@@ -26,6 +26,7 @@
 		759FBEFA1DD5751F009C13E4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FBEF91DD5751F009C13E4 /* libsqlite3.tbd */; };
 		759FBEFC1DD57529009C13E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FBEFB1DD57529009C13E4 /* AVFoundation.framework */; };
 		759FBEFE1DD57531009C13E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FBEFD1DD57531009C13E4 /* AudioToolbox.framework */; };
+		75CBD1DD1E6573C6007F0C2E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBD1DC1E6573C6007F0C2E /* JavaScriptCore.framework */; };
 		75D63ABB1DD5B9F500E9CBF5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D63ABA1DD5B9F500E9CBF5 /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		759FBEF91DD5751F009C13E4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		759FBEFB1DD57529009C13E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		759FBEFD1DD57531009C13E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		75CBD1DC1E6573C6007F0C2E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		75D63ABA1DD5B9F500E9CBF5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		80706093A27FB3ECBACA779B /* Pods-weexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weexDemo/Pods-weexDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C0738B70B7EF80D14AB05861 /* libPods-weexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75CBD1DD1E6573C6007F0C2E /* JavaScriptCore.framework in Frameworks */,
 				75D63ABB1DD5B9F500E9CBF5 /* EventKit.framework in Frameworks */,
 				759FBEFE1DD57531009C13E4 /* AudioToolbox.framework in Frameworks */,
 				759FBEFC1DD57529009C13E4 /* AVFoundation.framework in Frameworks */,
@@ -249,6 +252,7 @@
 		759FBEF21DD574E8009C13E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75CBD1DC1E6573C6007F0C2E /* JavaScriptCore.framework */,
 				75D63ABA1DD5B9F500E9CBF5 /* EventKit.framework */,
 				759FBEFD1DD57531009C13E4 /* AudioToolbox.framework */,
 				759FBEFB1DD57529009C13E4 /* AVFoundation.framework */,

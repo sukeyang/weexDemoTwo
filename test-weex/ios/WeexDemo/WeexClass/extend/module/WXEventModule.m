@@ -11,12 +11,28 @@
 #import <WeexSDK/WXBaseViewController.h>
 
 @implementation WXEventModule
-
+//WX_EXPORT_METHOD(@selector(openURL:callback:))
+WX_EXPORT_METHOD(@selector(openURL:callback:))
 @synthesize weexInstance;
 
-WX_EXPORT_METHOD(@selector(openURL:))
-
 //这个openURL 对应的是weex.js文件中的openURL的方法。js调用openURL则通过runtime执行到native的这个openURL方法
+//items: [{
+//content: "扫码",
+//methodName: "qrcode"
+//}, {
+//content: "GPS",
+//methodName: "gps"
+//}, {
+//content: "获取session",
+//methodName: "getSession"
+//}, {
+//content: "相册",
+//methodName: "album"
+//}, {
+//content: "地图",
+//methodName: "map"
+//}]
+
 - (void)openURL:(NSString *)url {
     NSString *newURL = url;
     if ([url hasPrefix:@"//"]) {
@@ -29,6 +45,23 @@ WX_EXPORT_METHOD(@selector(openURL:))
     UIViewController *controller = [[ViewController alloc] init];
 //    ((ViewController *)controller).url = [NSURL URLWithString:newURL];
 //    [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
+}
+
+- (void)openURL:(NSString *)url callback:(WXModuleCallback)callback {
+    NSString *newURL = url;
+    if ([url hasPrefix:@"//"]) {
+        newURL = [NSString stringWithFormat:@"http:%@", url];
+    } else if (![url hasPrefix:@"http"]) {
+        newURL = [NSURL URLWithString:url relativeToURL:weexInstance.scriptURL].absoluteString;
+    }
+    
+//    if (@"") {
+//        <#statements#>
+//    }
+//    UIViewController *controller = [[WXDemoViewController alloc] init];
+//    ((WXDemoViewController *)controller).url = [NSURL URLWithString:newURL];
+//    [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
+    callback(@{@"result":@"success"});
 }
 
 @end

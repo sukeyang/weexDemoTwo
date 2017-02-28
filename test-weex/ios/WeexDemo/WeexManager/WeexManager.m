@@ -24,6 +24,7 @@
     
     //register custom module and component，optional
 //    [WXSDKEngine registerComponent:@"MyView" withClass:[MyViewComponent class]];
+//    [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
     [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
 //
 //    //register the implementation of protocol, optional

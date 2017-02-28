@@ -5405,8 +5405,7 @@
 	//
 	//
 
-	var eventModule = weex.requireModule('@weex-module/event');
-
+	var eventModule = weex.requireModule('event');
 	exports.default = {
 	  components: {
 	    AppHeader: _appHeader2.default
@@ -5436,8 +5435,10 @@
 
 	    goMethod: function goMethod(index) {
 	      var message;
-	      message = '@weex-module/' + this.$data.items[index].methodName;
+	      message = '' + this.$data.items[index].methodName;
+
 	      eventModule.openURL(message, function (ret) {
+	        this.src = ret;
 	        nativeLog(ret);
 	      });
 	    },
@@ -5466,7 +5467,13 @@
 /***/ function(module, exports) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('div', [_c('app-header'), _vm._m(0), _c('list', {
+	  return _c('div', [_c('app-header'), _c('div', {
+	    staticClass: ["testBtn"]
+	  }, [_c('text', {
+	    on: {
+	      "click": _vm.click
+	    }
+	  }, [_vm._v("点击我测试")])]), _c('list', {
 	    staticClass: ["list"]
 	  }, _vm._l((_vm.items), function(item, index) {
 	    return _c('cell', {
@@ -5488,15 +5495,7 @@
 	      }
 	    }, [_vm._v(_vm._s(item.content))])], 1)
 	  }))], 1)
-	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('div', {
-	    staticClass: ["testBtn"]
-	  }, [_c('text', {
-	    attrs: {
-	      "onclick": "click"
-	    }
-	  }, [_vm._v("点击我测试")])])
-	}]}
+	},staticRenderFns: []}
 	module.exports.render._withStripped = true
 
 /***/ },

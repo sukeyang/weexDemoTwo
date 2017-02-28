@@ -2,7 +2,7 @@
   <div>
     <app-header></app-header>
     <div class="testBtn">
-      <text onclick="click">点击我测试</text>
+      <text @click="click">点击我测试</text>
     </div>
     <list class="list">
       <cell class="cell" v-for="(item,index) in items">
@@ -14,8 +14,7 @@
 <script>
 import AppHeader from '../components/app-header.vue'
 var modal = weex.requireModule('modal')
-var eventModule = weex.requireModule('@weex-module/event'); 
-
+var eventModule = weex.requireModule('event'); 
 export default {
   components: {
     AppHeader
@@ -41,13 +40,15 @@ export default {
     }
   },
   methods: {
-   
+
     goMethod:function (index) {
        var  message ;
-       message = '@weex-module/' + this.$data.items[index].methodName;
-        eventModule.openURL(message,function(ret) {   
-        nativeLog(ret);
-      });
+       message = '' + this.$data.items[index].methodName;
+     
+      eventModule.openURL(message,function(ret) {
+          this.src=ret;
+          nativeLog(ret);
+        });
     },
     
       // modal.alert({
