@@ -14,7 +14,7 @@
 <script>
 import AppHeader from '../components/app-header.vue'
 var modal = weex.requireModule('modal')
-var eventModule = weex.requireModule('@weex-module/event'); 
+var eventModule = weex.requireModule('event'); 
 
 export default {
   components: {
@@ -44,9 +44,15 @@ export default {
    
     goMethod:function (index) {
        var  message ;
-       message = '@weex-module/' + this.$data.items[index].methodName;
+       message = '' + this.$data.items[index].methodName;
         eventModule.openURL(message,function(ret) {   
         nativeLog(ret);
+
+          modal.alert({
+          message: '@weex-module/' + ret,
+          duration: 3,
+          okTitle: '确定'
+        })
       });
     },
     

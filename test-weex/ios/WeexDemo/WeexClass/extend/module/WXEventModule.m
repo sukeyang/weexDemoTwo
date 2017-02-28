@@ -7,17 +7,18 @@
  */
 
 #import "WXEventModule.h"
-#import "ViewController.h"
+#import "LocationViewController.h"
 #import <WeexSDK/WXBaseViewController.h>
 
 @implementation WXEventModule
 
 @synthesize weexInstance;
 
-WX_EXPORT_METHOD(@selector(openURL:))
+WX_EXPORT_METHOD(@selector(echo:callback:))
+WX_EXPORT_METHOD(@selector(openURL:callback:))
 
 //这个openURL 对应的是weex.js文件中的openURL的方法。js调用openURL则通过runtime执行到native的这个openURL方法
-- (void)openURL:(NSString *)url {
+- (void)openURL:(NSString *)url callback:(WXModuleCallback)callback {
     NSString *newURL = url;
     if ([url hasPrefix:@"//"]) {
         newURL = [NSString stringWithFormat:@"http:%@", url];
@@ -25,10 +26,14 @@ WX_EXPORT_METHOD(@selector(openURL:))
         // relative path
         newURL = [NSURL URLWithString:url relativeToURL:weexInstance.scriptURL].absoluteString;
     }
-    
-    UIViewController *controller = [[ViewController alloc] init];
-//    ((ViewController *)controller).url = [NSURL URLWithString:newURL];
-//    [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
+    LocationViewController *controller = [[LocationViewController alloc] init];
+    controller.URLString = newURL;
+    [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
+    callback(@{@"result":@"success"});
+}
+
+- (void)echo:(NSString *)param callback:(WXModuleKeepAliveCallback)callback {
+    callback(@"123",YES);// 此处设置true，该回调function 可以多次回调执行，可以写循环测试.
 }
 
 @end
