@@ -58,14 +58,14 @@ export default {
     },
         
   //全局事件native ->js
-  globalEvent.addEventListener("geolocation", function (e) {
-       // console.log("get geolocation")
-        modal.alert({
-          message: 'message:' + "addEventListener",
-          duration: 3,
-          okTitle: '确定'
-        })
-   }),
+  // globalEvent.addEventListener("geolocation", function (e) {
+  //      // console.log("get geolocation")
+  //       modal.alert({
+  //         message: 'message:' + "addEventListener",
+  //         duration: 3,
+  //         okTitle: '确定'
+  //       })
+  //  }),
 
 //         exports.addEventListener = function (eventName, callback) {
 //           globalEvent.addEventListener(eventName, callback);
