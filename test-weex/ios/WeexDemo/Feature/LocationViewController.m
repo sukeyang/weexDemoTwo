@@ -7,10 +7,13 @@
 //
 
 #import "LocationViewController.h"
-
+#import "WeexManager.h"
+#import <WeexSDK/WeexSDK.h>
 
 @interface LocationViewController ()
 
+@property (assign,nonatomic) EventType mEventType;
+@property (nonatomic, readwrite, strong) WXSDKInstance *instance;
 @end
 
 @implementation LocationViewController
@@ -36,7 +39,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [WeexManager sharedInstance].callback(@"111111111",YES);
+    });
+     _instance = [[WXSDKInstance alloc] init];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [_instance fireGlobalEvent:@"geolocation" params:@{@"key":@"value"}];
+
+    });
+   }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

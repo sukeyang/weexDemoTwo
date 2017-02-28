@@ -15,6 +15,7 @@
 import AppHeader from '../components/app-header.vue'
 var modal = weex.requireModule('modal')
 var eventModule = weex.requireModule('event'); 
+var globalEvent = weex.require('globalEvent');
 
 export default {
   components: {
@@ -49,13 +50,28 @@ export default {
         nativeLog(ret);
 
           modal.alert({
-          message: '@weex-module/' + ret,
+          message: 'message:' + ret,
           duration: 3,
           okTitle: '确定'
         })
       });
     },
+    //全局事件native ->js
     
+    // globalEvent.addEventListener(),
+   //      globalEvent.addEventListener("geolocation", function (e) {
+   //     // console.log("get geolocation")
+   //      modal.alert({
+   //        message: 'message:' + "addEventListener",
+   //        duration: 3,
+   //        okTitle: '确定'
+   //      })
+   // }),
+
+//         exports.addEventListener = function (eventName, callback) {
+//           globalEvent.addEventListener(eventName, callback);
+// },
+
       // modal.alert({
       //     message: '@weex-module/' + this.$data.items[index].methodName,
       //     duration: 3,

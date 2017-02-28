@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, EventType) {
     EventTypeToWeex,
 };
 
-@interface LocationViewController : ViewController
+@interface LocationViewController : UIViewController
 
 @property (strong, nonatomic) NSString *URLString;
 
