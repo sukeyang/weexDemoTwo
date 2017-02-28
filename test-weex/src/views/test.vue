@@ -41,8 +41,8 @@ export default {
       }]
     }
   },
+
   methods: {
-   
     goMethod:function (index) {
        var  message ;
        message = '' + this.$data.items[index].methodName;
@@ -56,17 +56,16 @@ export default {
         })
       });
     },
-    //全局事件native ->js
-    
-    // globalEvent.addEventListener(),
-   //      globalEvent.addEventListener("geolocation", function (e) {
-   //     // console.log("get geolocation")
-   //      modal.alert({
-   //        message: 'message:' + "addEventListener",
-   //        duration: 3,
-   //        okTitle: '确定'
-   //      })
-   // }),
+        
+  //全局事件native ->js
+  globalEvent.addEventListener("geolocation", function (e) {
+       // console.log("get geolocation")
+        modal.alert({
+          message: 'message:' + "addEventListener",
+          duration: 3,
+          okTitle: '确定'
+        })
+   }),
 
 //         exports.addEventListener = function (eventName, callback) {
 //           globalEvent.addEventListener(eventName, callback);
