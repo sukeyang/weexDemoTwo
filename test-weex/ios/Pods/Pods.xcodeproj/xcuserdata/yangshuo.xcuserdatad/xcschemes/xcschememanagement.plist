@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SSCategoriesSDK.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SocketRocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>79C1E777827C4ACC006B9BAFB326A81D</key>
+		<key>14912DC157956B0E14744CD76605D8EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>802A06F649ECBE3E7D4EC911AD08B1F6</key>
+		<key>C2506332D8A4521A876C65AC9BA5C559</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9411B34A7B85A6FAABEF8C9DEDA7779</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D0EF2EAA7186DB88A49C8FE4F56687A0</key>
+		<key>C952592BE0F94BB740D57587CB1638C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

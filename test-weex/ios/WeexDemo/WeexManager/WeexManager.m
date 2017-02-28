@@ -34,8 +34,8 @@
 }
 
 + (void)startDebugModel {
-    [WXDevTool setDebug:YES];
-    [WXDevTool launchDevToolDebugWithUrl:@"ws://172.16.150.123:8088/debugProxy/native"];
+//    [WXDevTool setDebug:YES];
+//    [WXDevTool launchDevToolDebugWithUrl:@"ws://172.16.150.123:8088/debugProxy/native"];
 }
 
 @end
