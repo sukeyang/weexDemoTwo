@@ -19,4 +19,6 @@
 
 @property (copy, nonatomic) WXModuleKeepAliveCallback callback;
 
+@property (nonatomic, strong) WXSDKInstance *mWXSDKInstance;
+
 @end

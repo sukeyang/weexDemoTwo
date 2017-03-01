@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <WeexSDK/WeexSDK.h>
 #import <EventKit/EventKit.h>
+#import "WeexManager.h"
 
 @interface ViewController ()<UIGestureRecognizerDelegate>
 @property (nonatomic, readwrite, strong) WXSDKInstance *instance;
@@ -70,6 +71,7 @@
     NSString *url = [NSString stringWithFormat:@"file://%@/index.js",[NSBundle mainBundle].bundlePath];
     
     [_instance renderWithURL:[NSURL URLWithString:url] options:@{@"bundleUrl":url} data:nil];
+    [WeexManager sharedInstance].mWXSDKInstance = _instance;
 }
 
 - (void)dealloc{

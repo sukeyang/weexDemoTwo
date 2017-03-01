@@ -36,18 +36,19 @@
 //}]
 //}
 //},
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [WeexManager sharedInstance].callback(@"111111111",YES);
-    });
-     _instance = [[WXSDKInstance alloc] init];
-    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [_instance fireGlobalEvent:@"geolocation" params:@{@"key":@"value"}];
-//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [WeexManager sharedInstance].callback(@"111111111",YES);
 //    });
+     _instance =  [WeexManager sharedInstance].mWXSDKInstance;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [_instance fireGlobalEvent:@"geolocation" params:@{@"key":@"value,,,geolocation"}];
+
+    });
 }
 
 - (void)didReceiveMemoryWarning {

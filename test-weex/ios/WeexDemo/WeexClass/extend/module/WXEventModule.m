@@ -27,11 +27,17 @@ WX_EXPORT_METHOD(@selector(openURL:callback:))
         // relative path
 //        newURL = [NSURL URLWithString:url relativeToURL:weexInstance.scriptURL].absoluteString;
     }
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [[WeexManager sharedInstance].mWXSDKInstance fireGlobalEvent:@"geolocation" params:@{@"key":@"value"}];
+//        
+//    });
+    
     LocationViewController *controller = [[LocationViewController alloc] init];
     controller.URLString = newURL;
     [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
 //    callback(@{@"result":@"nat->js: success"});
-    [WeexManager sharedInstance].callback = callback;
+//    [WeexManager sharedInstance].callback = callback;
 //     callback(@"123",YES);
 }
 

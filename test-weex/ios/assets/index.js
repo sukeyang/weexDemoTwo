@@ -113,7 +113,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/App.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/App.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -2746,7 +2746,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/login-page.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/login-page.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -2892,7 +2892,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/components/app-header.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/components/app-header.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -3073,7 +3073,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/index.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/index.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -3250,7 +3250,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/longlist.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/longlist.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -3435,7 +3435,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/storage.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/storage.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -3676,7 +3676,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/router.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/router.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -3782,7 +3782,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/router-taobao.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/router-taobao.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -3852,7 +3852,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/change-net.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/change-net.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -3905,7 +3905,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/modal.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/modal.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -4067,7 +4067,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/picker.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/picker.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -4212,7 +4212,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/getUser.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/getUser.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -4235,6 +4235,7 @@
 	  },
 	  "button": {
 	    "height": 60,
+	    "margin": 30,
 	    "fontSize": 60,
 	    "backgroundColor": "#FF0000",
 	    "justifyContent": "center",
@@ -4337,7 +4338,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/navgator.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/navgator.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -4488,7 +4489,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/components/panel.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/components/panel.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -4660,7 +4661,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/components/navpage.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/components/navpage.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -4789,7 +4790,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/components/navbar.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/components/navbar.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -5002,19 +5003,15 @@
 	      color: _vm.rightItemColor
 	    },
 	    attrs: {
-	      "naviItemPosition": "right"
-	    },
-	    on: {
-	      "click": _vm.onclickrightitem
+	      "naviItemPosition": "right",
+	      "vOn:click": "onclickrightitem"
 	    }
 	  }, [_vm._v(_vm._s(_vm.rightItemTitle))]) : _vm._e(), (_vm.rightItemSrc) ? _c('image', {
 	    staticClass: ["right-image"],
 	    attrs: {
 	      "naviItemPosition": "right",
-	      "src": _vm.rightItemSrc
-	    },
-	    on: {
-	      "click": _vm.onclickrightitem
+	      "src": _vm.rightItemSrc,
+	      "vOn:click": "onclickrightitem"
 	    }
 	  }) : _vm._e(), (!_vm.leftItemSrc) ? _c('text', {
 	    staticClass: ["left-text"],
@@ -5022,19 +5019,15 @@
 	      color: _vm.leftItemColor
 	    },
 	    attrs: {
-	      "naviItemPosition": "left"
-	    },
-	    on: {
-	      "click": _vm.onclickleftitem
+	      "naviItemPosition": "left",
+	      "vOn:click": "onclickleftitem"
 	    }
 	  }, [_vm._v(_vm._s(_vm.leftItemTitle))]) : _vm._e(), (_vm.leftItemSrc) ? _c('image', {
 	    staticClass: ["left-image"],
 	    attrs: {
 	      "naviItemPosition": "left",
-	      "src": _vm.leftItemSrc
-	    },
-	    on: {
-	      "click": _vm.onclickleftitem
+	      "src": _vm.leftItemSrc,
+	      "vOn:click": "onclickleftitem"
 	    }
 	  }) : _vm._e(), _c('text', {
 	    staticClass: ["center-text"],
@@ -5109,7 +5102,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/components/button.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/components/button.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -5342,7 +5335,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/yangshuo/Documents/weexDemoTwo/test-weex/src/views/test.vue"
+	__vue_options__.__file = "/Users/hl/Desktop/weexDemo/Test/test-weex/src/views/test.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	__vue_options__.style = __vue_options__.style || {}
@@ -5362,6 +5355,7 @@
 	module.exports = {
 	  "cell": {
 	    "height": 100,
+	    "padding": 10,
 	    "borderStyle": "solid",
 	    "borderWidth": 2,
 	    "borderColor": "#FF0000",
@@ -5412,6 +5406,8 @@
 	//
 
 	var eventModule = weex.requireModule('event');
+	// var globalEvent = weex.require('globalEvent');
+	var globalEvent = weex.requireModule('globalEvent');
 
 	exports.default = {
 	  components: {
@@ -5438,21 +5434,45 @@
 	    };
 	  },
 
+	  ready: function ready() {
+	    globalEvent.addEventListener("geolocation", function (e) {
+	      console.log("get geolocation " + e[""]);
+	      modal.alert({
+	        message: 'message:' + e.key,
+	        duration: 3,
+	        okTitle: '确定'
+	      });
+	    });
+	  },
 	  methods: {
-
 	    goMethod: function goMethod(index) {
 	      var message;
-	      message = '' + this.$data.items[index].methodName;
-	      eventModule.openURL(message, function (ret) {
-	        nativeLog(ret);
+	      console.log("globalEvent " + globalEvent);
 
+	      // message = '' + this.$data.items[index].methodName;
+	      eventModule.openURL("123", function (ret) {
+	        //   nativeLog(ret);
+
+	        //     modal.alert({
+	        //     message: 'message:' + ret,
+	        //     duration: 3,
+	        //     okTitle: '确定'
+	        //   })
+	      });
+
+	      globalEvent.addEventListener("geolocation", function (e) {
+	        console.log("get geolocation " + e[""]);
 	        modal.alert({
-	          message: 'message:' + ret,
+	          message: 'message:' + e.key,
 	          duration: 3,
 	          okTitle: '确定'
 	        });
 	      });
 	    },
+
+	    //         exports.addEventListener = function (eventName, callback) {
+	    //           globalEvent.addEventListener(eventName, callback);
+	    // },
 
 	    // modal.alert({
 	    //     message: '@weex-module/' + this.$data.items[index].methodName,
@@ -5598,7 +5618,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * vuex v2.2.1
+	 * vuex v2.1.2
 	 * (c) 2017 Evan You
 	 * @license MIT
 	 */
@@ -5607,6 +5627,26 @@
 		typeof define === 'function' && define.amd ? define(factory) :
 		(global.Vuex = factory());
 	}(this, (function () { 'use strict';
+
+	var devtoolHook =
+	  typeof window !== 'undefined' &&
+	  window.__VUE_DEVTOOLS_GLOBAL_HOOK__;
+
+	function devtoolPlugin (store) {
+	  if (!devtoolHook) { return }
+
+	  store._devtoolHook = devtoolHook;
+
+	  devtoolHook.emit('vuex:init', store);
+
+	  devtoolHook.on('vuex:travel-to-state', function (targetState) {
+	    store.replaceState(targetState);
+	  });
+
+	  store.subscribe(function (mutation, state) {
+	    devtoolHook.emit('vuex:mutation', mutation, state);
+	  });
+	}
 
 	var applyMixin = function (Vue) {
 	  var version = Number(Vue.version.split('.')[0]);
@@ -5643,24 +5683,116 @@
 	  }
 	};
 
-	var devtoolHook =
-	  typeof window !== 'undefined' &&
-	  window.__VUE_DEVTOOLS_GLOBAL_HOOK__;
+	var mapState = normalizeNamespace(function (namespace, states) {
+	  var res = {};
+	  normalizeMap(states).forEach(function (ref) {
+	    var key = ref.key;
+	    var val = ref.val;
 
-	function devtoolPlugin (store) {
-	  if (!devtoolHook) { return }
-
-	  store._devtoolHook = devtoolHook;
-
-	  devtoolHook.emit('vuex:init', store);
-
-	  devtoolHook.on('vuex:travel-to-state', function (targetState) {
-	    store.replaceState(targetState);
+	    res[key] = function mappedState () {
+	      var state = this.$store.state;
+	      var getters = this.$store.getters;
+	      if (namespace) {
+	        var module = getModuleByNamespace(this.$store, 'mapState', namespace);
+	        if (!module) {
+	          return
+	        }
+	        state = module.context.state;
+	        getters = module.context.getters;
+	      }
+	      return typeof val === 'function'
+	        ? val.call(this, state, getters)
+	        : state[val]
+	    };
 	  });
+	  return res
+	});
 
-	  store.subscribe(function (mutation, state) {
-	    devtoolHook.emit('vuex:mutation', mutation, state);
+	var mapMutations = normalizeNamespace(function (namespace, mutations) {
+	  var res = {};
+	  normalizeMap(mutations).forEach(function (ref) {
+	    var key = ref.key;
+	    var val = ref.val;
+
+	    val = namespace + val;
+	    res[key] = function mappedMutation () {
+	      var args = [], len = arguments.length;
+	      while ( len-- ) args[ len ] = arguments[ len ];
+
+	      if (namespace && !getModuleByNamespace(this.$store, 'mapMutations', namespace)) {
+	        return
+	      }
+	      return this.$store.commit.apply(this.$store, [val].concat(args))
+	    };
 	  });
+	  return res
+	});
+
+	var mapGetters = normalizeNamespace(function (namespace, getters) {
+	  var res = {};
+	  normalizeMap(getters).forEach(function (ref) {
+	    var key = ref.key;
+	    var val = ref.val;
+
+	    val = namespace + val;
+	    res[key] = function mappedGetter () {
+	      if (namespace && !getModuleByNamespace(this.$store, 'mapGetters', namespace)) {
+	        return
+	      }
+	      if (!(val in this.$store.getters)) {
+	        console.error(("[vuex] unknown getter: " + val));
+	        return
+	      }
+	      return this.$store.getters[val]
+	    };
+	  });
+	  return res
+	});
+
+	var mapActions = normalizeNamespace(function (namespace, actions) {
+	  var res = {};
+	  normalizeMap(actions).forEach(function (ref) {
+	    var key = ref.key;
+	    var val = ref.val;
+
+	    val = namespace + val;
+	    res[key] = function mappedAction () {
+	      var args = [], len = arguments.length;
+	      while ( len-- ) args[ len ] = arguments[ len ];
+
+	      if (namespace && !getModuleByNamespace(this.$store, 'mapActions', namespace)) {
+	        return
+	      }
+	      return this.$store.dispatch.apply(this.$store, [val].concat(args))
+	    };
+	  });
+	  return res
+	});
+
+	function normalizeMap (map) {
+	  return Array.isArray(map)
+	    ? map.map(function (key) { return ({ key: key, val: key }); })
+	    : Object.keys(map).map(function (key) { return ({ key: key, val: map[key] }); })
+	}
+
+	function normalizeNamespace (fn) {
+	  return function (namespace, map) {
+	    if (typeof namespace !== 'string') {
+	      map = namespace;
+	      namespace = '';
+	    } else if (namespace.charAt(namespace.length - 1) !== '/') {
+	      namespace += '/';
+	    }
+	    return fn(namespace, map)
+	  }
+	}
+
+	function getModuleByNamespace (store, helper, namespace) {
+	  var module = store._modulesNamespaceMap[namespace];
+	  if (!module) {
+	    console.error(("[vuex] module namespace not found in " + helper + "(): " + namespace));
+	  }
+	  return module
 	}
 
 	/**
@@ -5895,7 +6027,7 @@
 	var prototypeAccessors = { state: {} };
 
 	prototypeAccessors.state.get = function () {
-	  return this._vm._data.$$state
+	  return this._vm.$data.state
 	};
 
 	prototypeAccessors.state.set = function (v) {
@@ -5972,7 +6104,7 @@
 	    var this$1 = this;
 
 	  this._withCommit(function () {
-	    this$1._vm._data.$$state = state;
+	    this$1._vm.state = state;
 	  });
 	};
 
@@ -6046,9 +6178,7 @@
 	  var silent = Vue.config.silent;
 	  Vue.config.silent = true;
 	  store._vm = new Vue({
-	    data: {
-	      $$state: state
-	    },
+	    data: { state: state },
 	    computed: computed
 	  });
 	  Vue.config.silent = silent;
@@ -6063,7 +6193,7 @@
 	      // dispatch changes in all subscribed watchers
 	      // to force getter re-evaluation for hot reloading.
 	      store._withCommit(function () {
-	        oldVm._data.$$state = null;
+	        oldVm.state = null;
 	      });
 	    }
 	    Vue.nextTick(function () { return oldVm.$destroy(); });
@@ -6240,7 +6370,7 @@
 	}
 
 	function enableStrictMode (store) {
-	  store._vm.$watch(function () { return this._data.$$state }, function () {
+	  store._vm.$watch('state', function () {
 	    assert(store._committing, "Do not mutate vuex store state outside mutation handlers.");
 	  }, { deep: true, sync: true });
 	}
@@ -6279,126 +6409,10 @@
 	  install(window.Vue);
 	}
 
-	var mapState = normalizeNamespace(function (namespace, states) {
-	  var res = {};
-	  normalizeMap(states).forEach(function (ref) {
-	    var key = ref.key;
-	    var val = ref.val;
-
-	    res[key] = function mappedState () {
-	      var state = this.$store.state;
-	      var getters = this.$store.getters;
-	      if (namespace) {
-	        var module = getModuleByNamespace(this.$store, 'mapState', namespace);
-	        if (!module) {
-	          return
-	        }
-	        state = module.context.state;
-	        getters = module.context.getters;
-	      }
-	      return typeof val === 'function'
-	        ? val.call(this, state, getters)
-	        : state[val]
-	    };
-	    // mark vuex getter for devtools
-	    res[key].vuex = true;
-	  });
-	  return res
-	});
-
-	var mapMutations = normalizeNamespace(function (namespace, mutations) {
-	  var res = {};
-	  normalizeMap(mutations).forEach(function (ref) {
-	    var key = ref.key;
-	    var val = ref.val;
-
-	    val = namespace + val;
-	    res[key] = function mappedMutation () {
-	      var args = [], len = arguments.length;
-	      while ( len-- ) args[ len ] = arguments[ len ];
-
-	      if (namespace && !getModuleByNamespace(this.$store, 'mapMutations', namespace)) {
-	        return
-	      }
-	      return this.$store.commit.apply(this.$store, [val].concat(args))
-	    };
-	  });
-	  return res
-	});
-
-	var mapGetters = normalizeNamespace(function (namespace, getters) {
-	  var res = {};
-	  normalizeMap(getters).forEach(function (ref) {
-	    var key = ref.key;
-	    var val = ref.val;
-
-	    val = namespace + val;
-	    res[key] = function mappedGetter () {
-	      if (namespace && !getModuleByNamespace(this.$store, 'mapGetters', namespace)) {
-	        return
-	      }
-	      if (!(val in this.$store.getters)) {
-	        console.error(("[vuex] unknown getter: " + val));
-	        return
-	      }
-	      return this.$store.getters[val]
-	    };
-	    // mark vuex getter for devtools
-	    res[key].vuex = true;
-	  });
-	  return res
-	});
-
-	var mapActions = normalizeNamespace(function (namespace, actions) {
-	  var res = {};
-	  normalizeMap(actions).forEach(function (ref) {
-	    var key = ref.key;
-	    var val = ref.val;
-
-	    val = namespace + val;
-	    res[key] = function mappedAction () {
-	      var args = [], len = arguments.length;
-	      while ( len-- ) args[ len ] = arguments[ len ];
-
-	      if (namespace && !getModuleByNamespace(this.$store, 'mapActions', namespace)) {
-	        return
-	      }
-	      return this.$store.dispatch.apply(this.$store, [val].concat(args))
-	    };
-	  });
-	  return res
-	});
-
-	function normalizeMap (map) {
-	  return Array.isArray(map)
-	    ? map.map(function (key) { return ({ key: key, val: key }); })
-	    : Object.keys(map).map(function (key) { return ({ key: key, val: map[key] }); })
-	}
-
-	function normalizeNamespace (fn) {
-	  return function (namespace, map) {
-	    if (typeof namespace !== 'string') {
-	      map = namespace;
-	      namespace = '';
-	    } else if (namespace.charAt(namespace.length - 1) !== '/') {
-	      namespace += '/';
-	    }
-	    return fn(namespace, map)
-	  }
-	}
-
-	function getModuleByNamespace (store, helper, namespace) {
-	  var module = store._modulesNamespaceMap[namespace];
-	  if (!module) {
-	    console.error(("[vuex] module namespace not found in " + helper + "(): " + namespace));
-	  }
-	  return module
-	}
-
 	var index = {
 	  Store: Store,
 	  install: install,
-	  version: '2.2.1',
+	  version: '2.1.2',
 	  mapState: mapState,
 	  mapMutations: mapMutations,
 	  mapGetters: mapGetters,
