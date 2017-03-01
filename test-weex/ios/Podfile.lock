@@ -1,28 +1,44 @@
 PODS:
   - ATSDK-Weex (0.0.1)
+  - MBProgressHUD (0.9.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
   - SocketRocket (0.4.2)
+  - SSCategoriesSDK (0.3.8):
+    - SSCategoriesSDK/SSFoundation (= 0.3.8)
+    - SSCategoriesSDK/SSTools (= 0.3.8)
+    - SSCategoriesSDK/SSUIKit (= 0.3.8)
+  - SSCategoriesSDK/SSFoundation (0.3.8):
+    - SSCategoriesSDK/SSUIKit
+  - SSCategoriesSDK/SSTools (0.3.8)
+  - SSCategoriesSDK/SSUIKit (0.3.8)
   - WeexSDK (0.9.5.3):
     - SocketRocket
   - WXDevtool (0.9.5):
     - WeexSDK
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - ATSDK-Weex (~> 0.0.1)
+  - MBProgressHUD (~> 0.9.2)
   - SDWebImage (= 3.7.5)
   - SocketRocket (= 0.4.2)
+  - SSCategoriesSDK (~> 0.3.8)
   - WeexSDK (~> 0.9.5)
   - WXDevtool (~> 0.9.5)
+  - YYModel (~> 1.0.1)
 
 SPEC CHECKSUMS:
   ATSDK-Weex: 1b27558f4336d77fb97704d34fc6ad1fd468592c
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SocketRocket: ffe08119b00ef982f6c37052a4705a057c8494ad
+  SSCategoriesSDK: 5a068493644c58e5b886d2129e0106e056107608
   WeexSDK: fd9686048346bd73bfa762c3898ddb1a8eeafc99
   WXDevtool: 5135a5c6f4426fb635babb9eacfa14352bc66dc6
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: fb6fd5b243b349e7a1f05ee0c4c740f549703b7d
+PODFILE CHECKSUM: 428267584d672acd19c2b333d58f95a103f98514
 
 COCOAPODS: 1.1.1

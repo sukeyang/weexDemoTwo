@@ -16,8 +16,7 @@
 @property (nonatomic, weak) UIView *weexView;
 @end
 
-@implementation ViewController
-{
+@implementation ViewController {
     NSArray *gesArry;
     NSInteger tapCount;
 }

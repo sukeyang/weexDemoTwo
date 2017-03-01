@@ -18,6 +18,8 @@
 		757A1C121E4ADFFC003551A3 /* WeexManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 757A1C051E4ADFFC003551A3 /* WeexManager.m */; };
 		757A1C2A1E4B1E32003551A3 /* WXImgLoaderDefaultImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 757A1C251E4B1E32003551A3 /* WXImgLoaderDefaultImpl.m */; };
 		757A1C2B1E4B1E32003551A3 /* WXEventModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 757A1C281E4B1E32003551A3 /* WXEventModule.m */; };
+		757B1F2D1E659A1F00D0F493 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 757B1F2C1E659A1F00D0F493 /* JavaScriptCore.framework */; };
+		757B1F311E659B4F00D0F493 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 757B1F301E659B4F00D0F493 /* LocationViewController.m */; };
 		759FBED51DD573E1009C13E4 /* TextDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 759FBED41DD573E1009C13E4 /* TextDemoTests.m */; };
 		759FBEE01DD573E1009C13E4 /* TextDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 759FBEDF1DD573E1009C13E4 /* TextDemoUITests.m */; };
 		759FBEF41DD574E8009C13E4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FBEF31DD574E8009C13E4 /* SystemConfiguration.framework */; };
@@ -26,7 +28,6 @@
 		759FBEFA1DD5751F009C13E4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FBEF91DD5751F009C13E4 /* libsqlite3.tbd */; };
 		759FBEFC1DD57529009C13E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FBEFB1DD57529009C13E4 /* AVFoundation.framework */; };
 		759FBEFE1DD57531009C13E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FBEFD1DD57531009C13E4 /* AudioToolbox.framework */; };
-		75CBD1DD1E6573C6007F0C2E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75CBD1DC1E6573C6007F0C2E /* JavaScriptCore.framework */; };
 		75D63ABB1DD5B9F500E9CBF5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D63ABA1DD5B9F500E9CBF5 /* EventKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,9 @@
 		757A1C251E4B1E32003551A3 /* WXImgLoaderDefaultImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXImgLoaderDefaultImpl.m; sourceTree = "<group>"; };
 		757A1C271E4B1E32003551A3 /* WXEventModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXEventModule.h; sourceTree = "<group>"; };
 		757A1C281E4B1E32003551A3 /* WXEventModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXEventModule.m; sourceTree = "<group>"; };
+		757B1F2C1E659A1F00D0F493 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		757B1F2F1E659B4F00D0F493 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		757B1F301E659B4F00D0F493 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		759FBEB71DD573E0009C13E4 /* weexDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weexDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759FBED01DD573E1009C13E4 /* weexDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weexDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		759FBED41DD573E1009C13E4 /* TextDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextDemoTests.m; sourceTree = "<group>"; };
@@ -78,7 +82,6 @@
 		759FBEF91DD5751F009C13E4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		759FBEFB1DD57529009C13E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		759FBEFD1DD57531009C13E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		75CBD1DC1E6573C6007F0C2E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		75D63ABA1DD5B9F500E9CBF5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		80706093A27FB3ECBACA779B /* Pods-weexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weexDemo/Pods-weexDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C0738B70B7EF80D14AB05861 /* libPods-weexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75CBD1DD1E6573C6007F0C2E /* JavaScriptCore.framework in Frameworks */,
+				757B1F2D1E659A1F00D0F493 /* JavaScriptCore.framework in Frameworks */,
 				75D63ABB1DD5B9F500E9CBF5 /* EventKit.framework in Frameworks */,
 				759FBEFE1DD57531009C13E4 /* AudioToolbox.framework in Frameworks */,
 				759FBEFC1DD57529009C13E4 /* AVFoundation.framework in Frameworks */,
@@ -141,6 +144,7 @@
 		757A1BF21E4ADFFC003551A3 /* WeexDemo */ = {
 			isa = PBXGroup;
 			children = (
+				757B1F2E1E659B3600D0F493 /* Feature */,
 				7579BA1C1E4C1ED4008C28AA /* assets */,
 				757A1C1E1E4B1E1F003551A3 /* WeexClass */,
 				757A1BF31E4ADFFC003551A3 /* AppDelegate.h */,
@@ -209,6 +213,15 @@
 			path = module;
 			sourceTree = "<group>";
 		};
+		757B1F2E1E659B3600D0F493 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				757B1F2F1E659B4F00D0F493 /* LocationViewController.h */,
+				757B1F301E659B4F00D0F493 /* LocationViewController.m */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
 		759FBEAE1DD573E0009C13E4 = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +265,7 @@
 		759FBEF21DD574E8009C13E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				75CBD1DC1E6573C6007F0C2E /* JavaScriptCore.framework */,
+				757B1F2C1E659A1F00D0F493 /* JavaScriptCore.framework */,
 				75D63ABA1DD5B9F500E9CBF5 /* EventKit.framework */,
 				759FBEFD1DD57531009C13E4 /* AudioToolbox.framework */,
 				759FBEFB1DD57529009C13E4 /* AVFoundation.framework */,
@@ -455,6 +468,7 @@
 			files = (
 				757A1C2B1E4B1E32003551A3 /* WXEventModule.m in Sources */,
 				757A1C121E4ADFFC003551A3 /* WeexManager.m in Sources */,
+				757B1F311E659B4F00D0F493 /* LocationViewController.m in Sources */,
 				757A1C111E4ADFFC003551A3 /* ViewController.m in Sources */,
 				757A1C2A1E4B1E32003551A3 /* WXImgLoaderDefaultImpl.m in Sources */,
 				757A1C101E4ADFFC003551A3 /* main.m in Sources */,

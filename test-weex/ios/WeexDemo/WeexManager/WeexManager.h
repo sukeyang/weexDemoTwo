@@ -13,7 +13,10 @@
 
 @interface WeexManager : NSObject
 
++ (instancetype)sharedInstance;
+
 + (void)setUp;
 
+@property (copy, nonatomic) WXModuleKeepAliveCallback callback;
 
 @end
