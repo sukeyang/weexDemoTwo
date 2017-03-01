@@ -14,7 +14,7 @@
 <script>
 import AppHeader from '../components/app-header.vue'
 var modal = weex.requireModule('modal')
-var eventModule = weex.requireModule('event'); 
+var eventModule = weex.requireModule('event');
 // var globalEvent = weex.require('globalEvent');
 var globalEvent = weex.requireModule('globalEvent');
 
@@ -42,65 +42,65 @@ export default {
       }]
     }
   },
- // ready: function ()  {
- //      globalEvent.addEventListener("geolocation", function (e) {
- //        console.log("get geolocation " + e[""]);
- //        modal.alert({
- //          message: 'message:' + e.key,
- //          duration: 3,
- //          okTitle: '确定'
- //        })
- //    });
- //  },
+  // ready: function ()  {
+  //      globalEvent.addEventListener("geolocation", function (e) {
+  //        console.log("get geolocation " + e[""]);
+  //        modal.alert({
+  //          message: 'message:' + e.key,
+  //          duration: 3,
+  //          okTitle: '确定'
+  //        })
+  //    });
+  //  },
   methods: {
-    goMethod:function (index) {
-       var  message ;
+    goMethod: function(index) {
+      var message;
       console.log("globalEvent " + globalEvent);
+      // message = '' + this.$data.items[index].methodName;
+      eventModule.openURL("123", function(ret) {
+        //   nativeLog(ret);
 
-       // message = '' + this.$data.items[index].methodName;
-        eventModule.openURL("123",function(ret) {   
-      //   nativeLog(ret);
-
-      //     modal.alert({
-      //     message: 'message:' + ret,
-      //     duration: 3,
-      //     okTitle: '确定'
-      //   })
+        //     modal.alert({
+        //     message: 'message:' + ret,
+        //     duration: 3,
+        //     okTitle: '确定'
+        //   })
       });
-         
-      globalEvent.addEventListener("geolocation", function (e) {
-      console.log("get geolocation " + e[""]);
+
+      globalEvent.addEventListener("geolocation", function(e) {
+        console.log("get geolocation " + e[""]);
         modal.alert({
           message: 'message:' + e.key,
           duration: 3,
           okTitle: '确定'
         })
-   });
+      });
     },
-    
 
-//         exports.addEventListener = function (eventName, callback) {
-//           globalEvent.addEventListener(eventName, callback);
-// },
 
-      // modal.alert({
-      //     message: '@weex-module/' + this.$data.items[index].methodName,
-      //     duration: 3,
-      //     okTitle: '确定'
-      //   })
+    //         exports.addEventListener = function (eventName, callback) {
+    //           globalEvent.addEventListener(eventName, callback);
+    // },
+
+    // modal.alert({
+    //     message: '@weex-module/' + this.$data.items[index].methodName,
+    //     duration: 3,
+    //     okTitle: '确定'
+    //   })
     //     // console.log(event.target.getAttribute("data-methodname"))
     //   // require('@weex-module/' + this.$data.items[index].methodName)
     //    require('weex-components');
- 
+
     click() {
       // require('@weex-module/myModule').printLog("我是一个测试！")
 
-      eventModule.openURL(message,function(ret) {   
+      eventModule.openURL(message, function(ret) {
         nativeLog(ret);
       });
     }
   }
 }
+
 </script>
 <style scoped>
 .cell {
@@ -126,4 +126,6 @@ export default {
   height: 80px;
   background-color: red;
 }
+
 </style>
+
