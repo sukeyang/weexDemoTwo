@@ -29,6 +29,8 @@
 		759FBEFC1DD57529009C13E4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FBEFB1DD57529009C13E4 /* AVFoundation.framework */; };
 		759FBEFE1DD57531009C13E4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759FBEFD1DD57531009C13E4 /* AudioToolbox.framework */; };
 		75D63ABB1DD5B9F500E9CBF5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D63ABA1DD5B9F500E9CBF5 /* EventKit.framework */; };
+		75DD75DC1E6D151C004CC66F /* WeexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD75DB1E6D151C004CC66F /* WeexModel.m */; };
+		75DD75E01E6D226B004CC66F /* WXScannerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD75DF1E6D226B004CC66F /* WXScannerVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,12 @@
 		759FBEFB1DD57529009C13E4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		759FBEFD1DD57531009C13E4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		75D63ABA1DD5B9F500E9CBF5 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		75DD75D71E6D12B0004CC66F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		75DD75D81E6D13D1004CC66F /* PodHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodHeader.h; sourceTree = "<group>"; };
+		75DD75DA1E6D151C004CC66F /* WeexModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeexModel.h; sourceTree = "<group>"; };
+		75DD75DB1E6D151C004CC66F /* WeexModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexModel.m; sourceTree = "<group>"; };
+		75DD75DE1E6D226B004CC66F /* WXScannerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXScannerVC.h; sourceTree = "<group>"; };
+		75DD75DF1E6D226B004CC66F /* WXScannerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXScannerVC.m; sourceTree = "<group>"; };
 		80706093A27FB3ECBACA779B /* Pods-weexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weexDemo/Pods-weexDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C0738B70B7EF80D14AB05861 /* libPods-weexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB06E65BF2D1B6D67F98D2BC /* Pods-weexDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weexDemo/Pods-weexDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +152,9 @@
 		757A1BF21E4ADFFC003551A3 /* WeexDemo */ = {
 			isa = PBXGroup;
 			children = (
+				75DD75DD1E6D226B004CC66F /* Scanner */,
+				75DD75D81E6D13D1004CC66F /* PodHeader.h */,
+				75DD75D71E6D12B0004CC66F /* PrefixHeader.pch */,
 				757B1F2E1E659B3600D0F493 /* Feature */,
 				7579BA1C1E4C1ED4008C28AA /* assets */,
 				757A1C1E1E4B1E1F003551A3 /* WeexClass */,
@@ -216,6 +227,7 @@
 		757B1F2E1E659B3600D0F493 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				75DD75D91E6D1510004CC66F /* Model */,
 				757B1F2F1E659B4F00D0F493 /* LocationViewController.h */,
 				757B1F301E659B4F00D0F493 /* LocationViewController.m */,
 			);
@@ -276,6 +288,24 @@
 				C0738B70B7EF80D14AB05861 /* libPods-weexDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75DD75D91E6D1510004CC66F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75DD75DA1E6D151C004CC66F /* WeexModel.h */,
+				75DD75DB1E6D151C004CC66F /* WeexModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75DD75DD1E6D226B004CC66F /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				75DD75DE1E6D226B004CC66F /* WXScannerVC.h */,
+				75DD75DF1E6D226B004CC66F /* WXScannerVC.m */,
+			);
+			path = Scanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +496,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DD75E01E6D226B004CC66F /* WXScannerVC.m in Sources */,
+				75DD75DC1E6D151C004CC66F /* WeexModel.m in Sources */,
 				757A1C2B1E4B1E32003551A3 /* WXEventModule.m in Sources */,
 				757A1C121E4ADFFC003551A3 /* WeexManager.m in Sources */,
 				757B1F311E659B4F00D0F493 /* LocationViewController.m in Sources */,
@@ -623,6 +655,7 @@
 					"$(PROJECT_DIR)/WeexDemo/FeedBack/BCFeedback",
 					"$(PROJECT_DIR)/WeexDemo",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WeexDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/WeexDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -648,6 +681,7 @@
 					"$(PROJECT_DIR)/WeexDemo/FeedBack/BCFeedback",
 					"$(PROJECT_DIR)/WeexDemo",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WeexDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/WeexDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;

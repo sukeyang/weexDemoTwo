@@ -13,6 +13,8 @@ typedef NS_ENUM(NSInteger, EventType) {
     EventTypeGPS,
     EventTypePhoto,
     EventTypeToWeex,
+    EventTypeToSesssion,
+    EventTypeToMap,
 };
 
 @interface LocationViewController : UIViewController
