@@ -14,7 +14,9 @@
 <script>
 import AppHeader from '../components/app-header.vue'
 var modal = weex.requireModule('modal')
-var eventModule = weex.requireModule('event');
+var eventModule = weex.requireModule('event
+
+');
 
 export default {
   components: {

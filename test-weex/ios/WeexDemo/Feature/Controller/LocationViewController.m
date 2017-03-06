@@ -198,42 +198,19 @@
     }
 }
 
+
+
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
     self.imageView.hidden = NO;
     self.imageView.image = image;
-//    UIImage *ima = [UIImage fixOrientation:image];
-//    UIImage *img = [UIImage imageWithImage:ima scaledToSize:CGSizeMake(100, 100)];
     NSData *m_selectImage ;
     m_selectImage = UIImageJPEGRepresentation(image, 0.01);
     ;
-    self.weexModel.weexContent = m_selectImage;
+    UIImage *samllImage = [UIImage imageWithData:m_selectImage];
+    NSString * imageBase64 = [WeexModel image2DataURL:samllImage];
+    self.weexModel.weexContent = imageBase64;
     [picker dismissViewControllerAnimated:YES completion:nil];
-    
-//    UploadParam *upload = [[UploadParam alloc]init];
-//    upload.filename = @"userIcon.jpg";
-//    upload.name = @"userKey";
-//    upload.mimeType = @"image/jpg";
-//    upload.data = m_selectImage;
-//    upload.m_image = ima;
-//    
-//    @weakify(self);
-//    UpLoadPickerImageAPI *api = [[UpLoadPickerImageAPI alloc] init];
-//    api.m_uploadImage = upload;
-//    AppShowTipInfo(@"上传头像中..");
-//    //    api.showWaitHubInView = self.view;
-//    [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest *request) {
-//        @strongify(self);
-//        _userModel.userIcon = request.responseJSONObject[@"message"];
-//        NSData *data  = [NSKeyedArchiver archivedDataWithRootObject:_userModel];
-//        [CommonTools setDataValueForConfigurationKey:UserModel withValue:data];
-//        self.pickImage = ima;
-    
-//        [_tableView reloadData];
-//        [MBProgressHUD showSuccess:@"修改成功!" toView:self.view ];
-//    } failure:^(__kindof YTKBaseRequest *request) {
-//        
-//    }];
 }
 
 /*

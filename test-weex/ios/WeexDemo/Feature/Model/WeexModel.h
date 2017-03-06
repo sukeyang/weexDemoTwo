@@ -14,4 +14,6 @@
 
 @property (strong, nonatomic) id weexContent;
 
++ (NSString *)image2DataURL:(UIImage *)image;
+
 @end
