@@ -35,9 +35,10 @@ WX_EXPORT_METHOD(@selector(openURL:callback:))
     
     LocationViewController *controller = [[LocationViewController alloc] init];
     controller.URLString = newURL;
+    [WeexManager sharedInstance].callback = callback;
     [[weexInstance.viewController navigationController] pushViewController:controller animated:YES];
 //    callback(@{@"result":@"nat->js: success"});
-//    [WeexManager sharedInstance].callback = callback;
+    
 //     callback(@"123",YES);
 }
 

@@ -5406,8 +5406,6 @@
 	//
 
 	var eventModule = weex.requireModule('event');
-	// var globalEvent = weex.require('globalEvent');
-	var globalEvent = weex.requireModule('globalEvent');
 
 	exports.default = {
 	  components: {
@@ -5434,45 +5432,22 @@
 	    };
 	  },
 
-	  ready: function ready() {
-	    globalEvent.addEventListener("geolocation", function (e) {
-	      console.log("get geolocation " + e[""]);
-	      modal.alert({
-	        message: 'message:' + e.key,
-	        duration: 3,
-	        okTitle: '确定'
-	      });
-	    });
-	  },
 	  methods: {
+
 	    goMethod: function goMethod(index) {
 	      var message;
-	      console.log("globalEvent " + globalEvent);
-
-	      // message = '' + this.$data.items[index].methodName;
-	      eventModule.openURL("123", function (ret) {
-	        //   nativeLog(ret);
-
-	        //     modal.alert({
-	        //     message: 'message:' + ret,
-	        //     duration: 3,
-	        //     okTitle: '确定'
-	        //   })
-	      });
-
-	      globalEvent.addEventListener("geolocation", function (e) {
-	        console.log("get geolocation " + e[""]);
+	      message = '' + this.$data.items[index].methodName;
+	      eventModule.openURL(message, function (ret) {
+	        nativeLog(ret);
+	        // nativeLog(ret[message]);
+	        var messageOC = ret;
 	        modal.alert({
-	          message: 'message:' + e.key,
+	          message: 'nativeMessage:' + messageOC,
 	          duration: 3,
 	          okTitle: '确定'
 	        });
 	      });
 	    },
-
-	    //         exports.addEventListener = function (eventName, callback) {
-	    //           globalEvent.addEventListener(eventName, callback);
-	    // },
 
 	    // modal.alert({
 	    //     message: '@weex-module/' + this.$data.items[index].methodName,

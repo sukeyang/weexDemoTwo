@@ -89,12 +89,26 @@
 }
 
 - (void)rightItemClick:(id)sender {
+    if (_showText.text.length) {
+         _weexModel.weexContent = _showText.text;
+    }
     NSDictionary *dict = [_weexModel yy_modelToJSONObject];
     NSString *jsonString = [dict yy_modelToJSONString];
     [WeexManager sharedInstance].callback(jsonString,YES);
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)handleTwoCode {
+    @weakify(self);
+    WXScannerVC *scanViewController = [[WXScannerVC alloc] init];
+    [scanViewController setUpBasicBlock:^(NSString *content) {
+        @strongify(self);
+        self.showText.text = content;
+    }];
+    [self.navigationController pushViewController:scanViewController animated:YES];
+}
+
+- (void)handleEventTypeGPS {
     @weakify(self);
     WXScannerVC *scanViewController = [[WXScannerVC alloc] init];
     [scanViewController setUpBasicBlock:^(NSString *content) {
