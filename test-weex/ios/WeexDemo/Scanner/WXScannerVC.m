@@ -52,9 +52,6 @@
 #endif
 }
 
-- (void)setUpBasicBlock:(AppBasicBlock)block {
-    _callBlock = [block copy];
-}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -83,8 +80,8 @@
 
 - (void)openURL:(NSString*)URL {
     NSString *transformURL = URL;
-    if (_callBlock) {
-        _callBlock(transformURL);
+    if (self.callBlock) {
+        self.callBlock(transformURL);
     }
     [self.navigationController popViewControllerAnimated:YES];
     

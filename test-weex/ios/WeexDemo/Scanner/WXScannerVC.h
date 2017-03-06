@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "BaseViewController.h"
 
-@interface WXScannerVC : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
+@interface WXScannerVC : BaseViewController <AVCaptureMetadataOutputObjectsDelegate>
 
-@property (copy, nonatomic) AppBasicBlock callBlock;
 
-- (void)setUpBasicBlock:(AppBasicBlock)block;
 
 @end

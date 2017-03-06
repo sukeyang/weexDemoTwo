@@ -31,6 +31,10 @@
 		75D63ABB1DD5B9F500E9CBF5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D63ABA1DD5B9F500E9CBF5 /* EventKit.framework */; };
 		75DD75DC1E6D151C004CC66F /* WeexModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD75DB1E6D151C004CC66F /* WeexModel.m */; };
 		75DD75E01E6D226B004CC66F /* WXScannerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD75DF1E6D226B004CC66F /* WXScannerVC.m */; };
+		75DD75E21E6D36E7004CC66F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DD75E11E6D36E7004CC66F /* MapKit.framework */; };
+		75DD75E61E6D3796004CC66F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD75E51E6D3796004CC66F /* MapViewController.m */; };
+		75DD75E91E6D38FB004CC66F /* BasicMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD75E81E6D38FB004CC66F /* BasicMapAnnotation.m */; };
+		75DD75ED1E6D3974004CC66F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD75EC1E6D3974004CC66F /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +95,13 @@
 		75DD75DB1E6D151C004CC66F /* WeexModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeexModel.m; sourceTree = "<group>"; };
 		75DD75DE1E6D226B004CC66F /* WXScannerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXScannerVC.h; sourceTree = "<group>"; };
 		75DD75DF1E6D226B004CC66F /* WXScannerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXScannerVC.m; sourceTree = "<group>"; };
+		75DD75E11E6D36E7004CC66F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		75DD75E41E6D3796004CC66F /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		75DD75E51E6D3796004CC66F /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		75DD75E71E6D38FB004CC66F /* BasicMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMapAnnotation.h; sourceTree = "<group>"; };
+		75DD75E81E6D38FB004CC66F /* BasicMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMapAnnotation.m; sourceTree = "<group>"; };
+		75DD75EB1E6D3974004CC66F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		75DD75EC1E6D3974004CC66F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		80706093A27FB3ECBACA779B /* Pods-weexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weexDemo/Pods-weexDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C0738B70B7EF80D14AB05861 /* libPods-weexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB06E65BF2D1B6D67F98D2BC /* Pods-weexDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weexDemo/Pods-weexDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DD75E21E6D36E7004CC66F /* MapKit.framework in Frameworks */,
 				757B1F2D1E659A1F00D0F493 /* JavaScriptCore.framework in Frameworks */,
 				75D63ABB1DD5B9F500E9CBF5 /* EventKit.framework in Frameworks */,
 				759FBEFE1DD57531009C13E4 /* AudioToolbox.framework in Frameworks */,
@@ -152,6 +164,8 @@
 		757A1BF21E4ADFFC003551A3 /* WeexDemo */ = {
 			isa = PBXGroup;
 			children = (
+				75DD75EA1E6D396A004CC66F /* BaseView */,
+				75DD75E31E6D3766004CC66F /* MapView */,
 				75DD75DD1E6D226B004CC66F /* Scanner */,
 				75DD75D81E6D13D1004CC66F /* PodHeader.h */,
 				75DD75D71E6D12B0004CC66F /* PrefixHeader.pch */,
@@ -277,6 +291,7 @@
 		759FBEF21DD574E8009C13E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75DD75E11E6D36E7004CC66F /* MapKit.framework */,
 				757B1F2C1E659A1F00D0F493 /* JavaScriptCore.framework */,
 				75D63ABA1DD5B9F500E9CBF5 /* EventKit.framework */,
 				759FBEFD1DD57531009C13E4 /* AudioToolbox.framework */,
@@ -306,6 +321,26 @@
 				75DD75DF1E6D226B004CC66F /* WXScannerVC.m */,
 			);
 			path = Scanner;
+			sourceTree = "<group>";
+		};
+		75DD75E31E6D3766004CC66F /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				75DD75E71E6D38FB004CC66F /* BasicMapAnnotation.h */,
+				75DD75E81E6D38FB004CC66F /* BasicMapAnnotation.m */,
+				75DD75E41E6D3796004CC66F /* MapViewController.h */,
+				75DD75E51E6D3796004CC66F /* MapViewController.m */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		75DD75EA1E6D396A004CC66F /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				75DD75EB1E6D3974004CC66F /* BaseViewController.h */,
+				75DD75EC1E6D3974004CC66F /* BaseViewController.m */,
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +531,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75DD75E91E6D38FB004CC66F /* BasicMapAnnotation.m in Sources */,
+				75DD75ED1E6D3974004CC66F /* BaseViewController.m in Sources */,
 				75DD75E01E6D226B004CC66F /* WXScannerVC.m in Sources */,
 				75DD75DC1E6D151C004CC66F /* WeexModel.m in Sources */,
 				757A1C2B1E4B1E32003551A3 /* WXEventModule.m in Sources */,
@@ -503,6 +540,7 @@
 				757B1F311E659B4F00D0F493 /* LocationViewController.m in Sources */,
 				757A1C111E4ADFFC003551A3 /* ViewController.m in Sources */,
 				757A1C2A1E4B1E32003551A3 /* WXImgLoaderDefaultImpl.m in Sources */,
+				75DD75E61E6D3796004CC66F /* MapViewController.m in Sources */,
 				757A1C101E4ADFFC003551A3 /* main.m in Sources */,
 				757A1C091E4ADFFC003551A3 /* AppDelegate.m in Sources */,
 			);
