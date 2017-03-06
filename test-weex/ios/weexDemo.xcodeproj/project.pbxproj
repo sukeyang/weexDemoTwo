@@ -35,6 +35,8 @@
 		75DD76091E6D535E004CC66F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD76081E6D535E004CC66F /* BaseViewController.m */; };
 		75DD760F1E6D55F2004CC66F /* BasicMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD760C1E6D55F2004CC66F /* BasicMapAnnotation.m */; };
 		75DD76101E6D55F2004CC66F /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD760E1E6D55F2004CC66F /* MapViewController.m */; };
+		75DD76141E6D593D004CC66F /* GTM_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD76131E6D593D004CC66F /* GTM_Base64.m */; };
+		75DD76171E6D597B004CC66F /* QNUrlSafeBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DD76161E6D597B004CC66F /* QNUrlSafeBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,10 @@
 		75DD760C1E6D55F2004CC66F /* BasicMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMapAnnotation.m; sourceTree = "<group>"; };
 		75DD760D1E6D55F2004CC66F /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		75DD760E1E6D55F2004CC66F /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		75DD76121E6D593D004CC66F /* GTM_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTM_Base64.h; sourceTree = "<group>"; };
+		75DD76131E6D593D004CC66F /* GTM_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTM_Base64.m; sourceTree = "<group>"; };
+		75DD76151E6D597B004CC66F /* QNUrlSafeBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNUrlSafeBase64.h; sourceTree = "<group>"; };
+		75DD76161E6D597B004CC66F /* QNUrlSafeBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNUrlSafeBase64.m; sourceTree = "<group>"; };
 		80706093A27FB3ECBACA779B /* Pods-weexDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-weexDemo/Pods-weexDemo.release.xcconfig"; sourceTree = "<group>"; };
 		C0738B70B7EF80D14AB05861 /* libPods-weexDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weexDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB06E65BF2D1B6D67F98D2BC /* Pods-weexDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weexDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weexDemo/Pods-weexDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -350,6 +356,7 @@
 		75DD76051E6D535E004CC66F /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				75DD76111E6D593D004CC66F /* Base64 */,
 				75DD76061E6D535E004CC66F /* BaseView */,
 			);
 			path = Utility;
@@ -373,6 +380,17 @@
 				75DD760E1E6D55F2004CC66F /* MapViewController.m */,
 			);
 			path = MapView;
+			sourceTree = "<group>";
+		};
+		75DD76111E6D593D004CC66F /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				75DD76151E6D597B004CC66F /* QNUrlSafeBase64.h */,
+				75DD76161E6D597B004CC66F /* QNUrlSafeBase64.m */,
+				75DD76121E6D593D004CC66F /* GTM_Base64.h */,
+				75DD76131E6D593D004CC66F /* GTM_Base64.m */,
+			);
+			path = Base64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,6 +589,8 @@
 				75DD75F91E6D5274004CC66F /* LocationViewController.m in Sources */,
 				757A1C2B1E4B1E32003551A3 /* WXEventModule.m in Sources */,
 				757A1C2A1E4B1E32003551A3 /* WXImgLoaderDefaultImpl.m in Sources */,
+				75DD76171E6D597B004CC66F /* QNUrlSafeBase64.m in Sources */,
+				75DD76141E6D593D004CC66F /* GTM_Base64.m in Sources */,
 				75DD76031E6D5324004CC66F /* WeexManager.m in Sources */,
 				75DD75FA1E6D5274004CC66F /* WeexModel.m in Sources */,
 				757A1C101E4ADFFC003551A3 /* main.m in Sources */,
